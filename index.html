@@ -1,1 +1,67 @@
-<p>This is a paragraph of text.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Ratte?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #ff9ac6; /* Pink background color */
+    }
+
+    #content {
+      text-align: center;
+    }
+
+    #message {
+      font-size: 24px;
+      color: #ffffff; /* White text color */
+    }
+
+    #buttons {
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    #yes {
+      background-color: #4caf50; /* Green button color for 'Yes' */
+      color: #ffffff; /* White text color */
+    }
+
+    #no {
+      background-color: #f44336; /* Red button color for 'No' */
+      color: #ffffff; /* White text color */
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div id="message">Will you be my ratte?</div>
+    <div id="buttons">
+      <button class="button" id="yes" onclick="showMessage('yay!')">Yes</button>
+      <button class="button" id="no" onclick="showMessage('sad :(')">No</button>
+    </div>
+  </div>
+
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+  </script>
+</body>
+</html>
