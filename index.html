@@ -44,7 +44,7 @@
         <label for="amount">Miktar:</label>
         <input type="number" id="amount" placeholder="Miktar girin...">
         <label for="from">Neyi:</label>
-        <select id="from">
+        <select id="from" onClick="scrollToSelected(this)">
             <option value="EUR" selected>EUR (Euro)</option>
             <option value="USD">USD (ABD Doları)</option>
             <option value="TRY">TRY (Türk Lirasi)</option>
@@ -54,7 +54,7 @@
             <option value="RSD">RSD (Sırp Dinarı)</option>
         </select>
         <label for="to">Neye:</label>
-        <select id="to">
+        <select id="to" onClick="scrollToSelected(this)">
             <option value="EUR">EUR (Euro)</option>
             <option value="USD">USD (ABD Doları)</option>
             <option value="TRY" selected>TRY (Türk Lirasi)</option>
