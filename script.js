@@ -12,9 +12,3 @@ function convertCurrency() {
         })
         .catch(error => console.error('Error fetching exchange rate:', error));
 }
-
-function scrollToSelected(selectElement) {
-    const selectedIndex = selectElement.selectedIndex;
-    const optionHeight = selectElement.options[selectedIndex].offsetHeight;
-    selectElement.scrollTop = selectedIndex * optionHeight - (selectElement.clientHeight / 2 - optionHeight / 2);
-}
