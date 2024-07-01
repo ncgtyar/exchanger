@@ -41,30 +41,30 @@
 <body>
     <div class="converter">
         <h2>Exchanger</h2>
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount...">
-        <label for="from">From:</label>
+        <label for="amount">Miktar:</label>
+        <input type="number" id="amount" placeholder="Miktar girin...">
+        <label for="from">Neyi:</label>
         <select id="from">
-            <option value="EUR">EUR (Euro)</option>
-            <option value="USD">USD (US Dollars)</option>
-            <option value="TRY">TRY (Turkish Lira)</option>
-            <option value="ALL">ALL (Albanian Lek)</option>
-            <option value="BAM">BAM (Bosnia and Herzegovina Convertible Mark)</option>
-            <option value="MKD">MKD (Macedonian Denar)</option>
-            <option value="RSD">RSD (Serbian Dinar)</option>
+            <option value="EUR" selected>EUR (Euro)</option>
+            <option value="USD">USD (ABD Doları)</option>
+            <option value="TRY">TRY (Türk Lirasi)</option>
+            <option value="ALL">ALL (Arnavut Leki)</option>
+            <option value="BAM">BAM (Bosnia-Hersek Markı)</option>
+            <option value="MKD">MKD (Makedon Dinarı)</option>
+            <option value="RSD">RSD (Sırp Dinarı)</option>
         </select>
-        <label for="to">To:</label>
+        <label for="to">Neye:</label>
         <select id="to">
             <option value="EUR">EUR (Euro)</option>
-            <option value="USD">USD (US Dollars)</option>
-            <option value="TRY">TRY (Turkish Lira)</option>
-            <option value="ALL">ALL (Albanian Lek)</option>
-            <option value="BAM">BAM (Bosnia and Herzegovina Convertible Mark)</option>
-            <option value="MKD">MKD (Macedonian Denar)</option>
-            <option value="RSD">RSD (Serbian Dinar)</option>
+            <option value="USD">USD (ABD Doları)</option>
+            <option value="TRY" selected>TRY (Türk Lirasi)</option>
+            <option value="ALL">ALL (Arnavut Leki)</option>
+            <option value="BAM">BAM (Bosnia-Hersek Markı)</option>
+            <option value="MKD">MKD (Makedon Dinarı)</option>
+            <option value="RSD">RSD (Sırp Dinarı)</option>
         </select>
-        <button onclick="convertCurrency()">Convert</button>
-        <h3>Result:</h3>
+        <button onclick="convertCurrency()">Çevir</button>
+        <h3>Sonuç:</h3>
         <p id="result"></p>
     </div>
 
