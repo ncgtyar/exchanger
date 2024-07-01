@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Will You Be My Ratte?</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #ff9ac6; /* Pink background color */
-    }
-
-    #content {
-      text-align: center;
-    }
-
-    #message {
-      font-size: 72px;
-      color: #ffffff; /* White text color */
-    }
-
-    #buttons {
-      margin-top: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-
-    #yes {
-      background-color: #4caf50; /* Green button color for 'Yes' */
-      color: #ffffff; /* White text color */
-    }
-
-    #no {
-      background-color: #f44336; /* Red button color for 'No' */
-      color: #ffffff; /* White text color */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .converter {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <div id="content">
-    <div id="message">Will you be my ratte?</div>
-    <div id="buttons">
-      <button class="button" id="yes" onclick="showMessage('ilysm')">Yes</button>
-      <button class="button" id="no" onclick="showMessage('kys')">No</button>
+    <div class="converter">
+        <h2>Currency Converter</h2>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount...">
+        <label for="from">From:</label>
+        <select id="from">
+            <option value="EUR">EUR</option>
+            <!-- Add other currencies as needed -->
+        </select>
+        <label for="to">To:</label>
+        <select id="to">
+            <option value="TRY">TRY</option>
+            <!-- Add other currencies as needed -->
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <h3>Result:</h3>
+        <p id="result"></p>
     </div>
-  </div>
 
-  <script>
-    function showMessage(message) {
-      alert(message);
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
